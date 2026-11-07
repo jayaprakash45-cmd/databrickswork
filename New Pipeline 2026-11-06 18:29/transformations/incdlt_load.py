@@ -14,3 +14,4 @@ rules  = {
 def inc_table():
     df = spark.readStream.format("cloudFiles").option("cloudFiles.format","csv").load("/Volumes/catalog_intrvw/source/orders_vol")
     return df
+
